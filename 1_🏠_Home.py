@@ -3,10 +3,6 @@ import pandas as pd
 import numpy as np
 from streamlit_extras.app_logo import add_logo
 
-if "data" not in st.session_state:
-    df = pd.read_excel("Dados_InstagramCliente_AULA_3ESP.xlsx", index_col="Post ID")
-    df = df.sort_values(by="Reach", ascending=False)
-    st.session_state["data"] = df
 
 # Configuração da página
 st.set_page_config(page_title="Dashboard de Distribuições Probabilísticas", layout="wide")
