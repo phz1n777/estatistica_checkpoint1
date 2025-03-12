@@ -21,9 +21,11 @@ def plot_distribution(x, y, title, xlabel, ylabel):
     fig.update_layout(title=title, xaxis_title=xlabel, yaxis_title=ylabel)
     st.plotly_chart(fig)
 
+
+
 st.header("Análise de Dados")
-st.write("Faça upload do seu arquivo Excel para analisar a distribuição de uma variável numérica.")
-uploaded_file = st.file_uploader("Carregue seu arquivo Excel", type=["xlsx", "xls"])
+st.divider()
+uploaded_file = "Placement_Data_Full_Class.xlsx"
 
 st.title("Análise Estatística dos Dados de Contratação de Alunos")
 
